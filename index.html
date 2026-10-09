@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Voltsphere — Gizlilik Politikası / Privacy Policy</title>
+<title>Voltsphere — gameshunter</title>
+<meta name="description" content="Voltsphere: neon kaydırmalı bulmaca oyunu. / Voltsphere: a neon slide-and-paint puzzle game.">
 <style>
   :root {
     --bg: #0b0d12;
@@ -22,233 +23,75 @@
     font-family: -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif;
     line-height: 1.6;
   }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
-  header {
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 16px; flex-wrap: wrap; margin-bottom: 8px;
-  }
-  h1 { font-size: 1.5rem; margin: 0; }
-  .updated { color: var(--dim); font-size: 0.85rem; margin: 0 0 28px; }
-  .langs { display: flex; gap: 8px; }
-  .langs button {
-    background: var(--card); color: var(--text); border: 1px solid var(--border);
-    border-radius: 8px; padding: 6px 14px; font-size: 0.85rem; cursor: pointer;
-  }
-  .langs button[aria-pressed="true"] {
-    border-color: var(--accent); color: var(--accent);
-  }
-  section { display: none; }
-  section.active { display: block; }
-  h2 {
-    font-size: 1.05rem; margin: 32px 0 10px;
+  .wrap { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
+  h1 {
+    font-size: 2.4rem; margin: 0 0 4px; letter-spacing: 0.18em;
     color: var(--accent);
   }
-  p, li { color: var(--text); }
-  ul { padding-left: 1.2rem; }
-  .note {
-    background: var(--card); border: 1px solid var(--border); border-radius: 10px;
-    padding: 14px 16px; color: var(--dim); font-size: 0.9rem; margin: 24px 0;
+  .rule { height: 3px; width: 72px; background: var(--accent2); margin: 12px 0 20px; }
+  .tag { color: var(--dim); margin: 0 0 32px; }
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px 22px; margin: 0 0 20px;
   }
+  .card h2 { font-size: 1rem; margin: 0 0 8px; color: var(--accent); }
+  .card p { margin: 0 0 10px; }
+  .card p:last-child { margin-bottom: 0; }
+  ul { margin: 0; padding-left: 1.2rem; }
   a { color: var(--accent); }
-  footer { color: var(--dim); font-size: 0.8rem; margin-top: 48px; }
+  .btn {
+    display: inline-block; margin-top: 4px; padding: 10px 18px;
+    border: 1px solid var(--accent); border-radius: 8px;
+    text-decoration: none; font-weight: 600;
+  }
+  footer { color: var(--dim); font-size: 0.85rem; margin-top: 36px; }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <header>
-    <h1>VOLTSPHERE</h1>
-    <div class="langs" role="tablist" aria-label="Language">
-      <button id="btn-tr" aria-pressed="true" onclick="showLang('tr')">Türkçe</button>
-      <button id="btn-en" aria-pressed="false" onclick="showLang('en')">English</button>
-    </div>
-  </header>
-  <p class="updated">Son güncelleme / Last updated: 10 Eylül 2026 — September 10, 2026</p>
+  <h1>VOLTSPHERE</h1>
+  <div class="rule"></div>
+  <p class="tag">DIGITAL ENERGY PROTOCOL</p>
 
-  <!-- ===================== TÜRKÇE ===================== -->
-  <section id="tr" class="active" lang="tr">
+  <div class="card" lang="tr">
+    <h2>Oyun hakkında</h2>
     <p>
-      Bu gizlilik politikası, <strong>gameshunter</strong> tarafından yayınlanan
-      <strong>Voltsphere</strong> mobil oyununu (Android ve iOS) kapsar. Oyunu
-      indirip oynayarak bu politikada açıklanan uygulamaları kabul etmiş
-      olursunuz. Bu belgede geçen "biz", gameshunter anlamına gelir.
-    </p>
-
-    <h2>Topladığımız veriler</h2>
-    <p>
-      Voltsphere'in kendi kodu <strong>hiçbir kişisel veri toplamaz</strong>: hesap
-      oluşturma yoktur, isim/e-posta/telefon numarası istenmez, konum, kamera,
-      mikrofon veya rehber erişimi kullanılmaz.
-    </p>
-    <p>
-      Oyun ilerlemeniz (açılan bölümler, yıldızlar, ayarlar) yalnızca
-      <strong>cihazınızda</strong> saklanır ve hiçbir sunucuya gönderilmez.
-    </p>
-
-    <h2>Reklamlar (Google AdMob)</h2>
-    <p>
-      Oyun, bölümler arasında banner ve geçiş reklamları göstermek için
-      <strong>Google AdMob</strong> (Google Mobile Ads SDK) kullanır. Reklamların
-      gösterilebilmesi için AdMob, cihazınızda aşağıdaki türde bilgileri
-      işleyebilir:
+      Voltsphere, neon bir ızgarada enerji küresini kaydırdığınız bir bulmaca
+      oyunudur. Küre bir engele çarpana kadar durmaz ve geçtiği her kareyi
+      yakar. Amaç, bütün ızgarayı en az hamleyle yakmaktır.
     </p>
     <ul>
-      <li>Reklam kimliği (Android Advertising ID; iOS'ta IDFA yalnızca
-        izin vermeniz hâlinde)</li>
-      <li>Cihaz ve uygulama bilgileri, yaklaşık konum (IP üzerinden)</li>
-      <li>Reklam etkileşim verileri (gösterim, tıklama)</li>
+      <li>1000 bölüm, 20 sektör</li>
+      <li>Çevrimdışı oynanır, hesap gerekmez</li>
+      <li>Türkçe ve İngilizce</li>
     </ul>
-    <p>
-      Bu veriler Google tarafından reklam sunumu, sıklık sınırlaması ve dolandırıcılık
-      önleme amacıyla işlenir. Google'ın kendi gizlilik ve reklam politikalarına şu
-      adresten ulaşabilirsiniz:
-      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.
-    </p>
+    <p><a class="btn" href="https://play.google.com/store/apps/details?id=com.gameshunterstm.voltsphere">Google Play'de aç</a></p>
+  </div>
 
-    <h2>Onay tercihiniz (AEA / İngiltere / İsviçre)</h2>
+  <div class="card" lang="en">
+    <h2>About the game</h2>
     <p>
-      Avrupa Ekonomik Alanı, İngiltere veya İsviçre'de bulunuyorsanız, oyun ilk
-      açıldığında Google'ın onay ekranı (User Messaging Platform) size reklam
-      tercihlerinizi sorar. Bu tercihi istediğiniz zaman oyun içinde
-      <strong>Ayarlar → Reklam Tercihleri</strong> bölümünden değiştirebilirsiniz.
-    </p>
-
-    <h2>İzinler</h2>
-    <ul>
-      <li><strong>İnternet / Ağ durumu:</strong> reklam istekleri ve çevrimiçi
-        olup olmadığınızı kontrol etmek için.</li>
-      <li><strong>Titreşim:</strong> dokunsal geri bildirim için; veri toplamaz.</li>
-      <li><strong>Ekranı açık tutma:</strong> oyun sırasında ekranın kararmasını
-        engellemek için.</li>
-    </ul>
-
-    <h2>Çocuklar</h2>
-    <p>
-      Voltsphere çocuklara yönelik olarak tasarlanmamıştır ve genel kitleye
-      hitap eder. Bilerek 13 yaşın altındaki çocuklardan veri toplamayız.
-    </p>
-
-    <h2>Haklarınız</h2>
-    <p>
-      Kendi kodumuz kişisel veri tutmadığı için silme/erişim talebiniz genellikle
-      Google'ın kendi araçlarına yönlendirilir: reklam kişiselleştirmesini cihaz
-      ayarlarınızdan kapatabilir veya yukarıdaki Reklam Tercihleri'nden onayınızı
-      geri çekebilirsiniz.
-    </p>
-    <p>
-      Cihazınızda tutulan oyun ilerlemeniz uygulamayı kaldırdığınızda tamamen
-      silinir; bizde bir kopyası bulunmaz.
-    </p>
-
-    <h2>Bu politikadaki değişiklikler</h2>
-    <p>
-      Bu sayfa güncellenebilir; önemli değişikliklerde en üstteki tarih güncellenir.
-    </p>
-
-    <h2>İletişim</h2>
-    <p>
-      Sorularınız ve veri talepleriniz için:
-      <a href="mailto:gameshunterstm@gmail.com">gameshunterstm@gmail.com</a>
-    </p>
-  </section>
-
-  <!-- ===================== ENGLISH ===================== -->
-  <section id="en" lang="en">
-    <p>
-      This privacy policy covers the <strong>Voltsphere</strong> mobile game
-      (Android and iOS), published by <strong>gameshunter</strong>. By downloading and
-      playing the game you agree to the practices described here. In this
-      document, "we" means gameshunter.
-    </p>
-
-    <h2>Data we collect</h2>
-    <p>
-      Voltsphere's own code <strong>collects no personal data</strong>: there is
-      no account creation, no name/email/phone number is requested, and the
-      game never accesses your location, camera, microphone or contacts.
-    </p>
-    <p>
-      Your progress (unlocked levels, stars, settings) is stored
-      <strong>only on your device</strong> and is never sent to any server.
-    </p>
-
-    <h2>Advertising (Google AdMob)</h2>
-    <p>
-      The game uses <strong>Google AdMob</strong> (Google Mobile Ads SDK) to
-      show banner and interstitial ads between levels. To serve ads, AdMob may
-      process the following on your device:
+      Voltsphere is a puzzle game where you slide an energy sphere across a
+      neon grid. It never stops until something blocks it, and it lights up
+      every tile it crosses. The goal is to light the whole grid in as few
+      moves as you can.
     </p>
     <ul>
-      <li>Advertising identifier (Android Advertising ID; on iOS the IDFA
-        only if you grant permission)</li>
-      <li>Device and app information, approximate location (via IP)</li>
-      <li>Ad interaction data (impressions, clicks)</li>
+      <li>1000 levels across 20 sectors</li>
+      <li>Plays offline, no account needed</li>
+      <li>English and Turkish</li>
     </ul>
-    <p>
-      Google processes this data for ad serving, frequency capping and fraud
-      prevention. Google's own privacy and ads policies are available at
-      <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">policies.google.com/technologies/ads</a>.
-    </p>
+    <p><a class="btn" href="https://play.google.com/store/apps/details?id=com.gameshunterstm.voltsphere">Get it on Google Play</a></p>
+  </div>
 
-    <h2>Your consent choice (EEA / UK / Switzerland)</h2>
-    <p>
-      If you are in the European Economic Area, the United Kingdom or
-      Switzerland, Google's consent screen (User Messaging Platform) asks for
-      your ad preferences the first time the game opens. You can change this
-      choice at any time from <strong>Settings → Ad Choices</strong> in the
-      game.
-    </p>
-
-    <h2>Permissions</h2>
-    <ul>
-      <li><strong>Internet / network state:</strong> for ad requests and
-        checking whether you are online.</li>
-      <li><strong>Vibration:</strong> haptic feedback only; collects no data.</li>
-      <li><strong>Keep screen on:</strong> prevents the screen from dimming
-        during play.</li>
-    </ul>
-
-    <h2>Children</h2>
-    <p>
-      Voltsphere is not directed at children and is intended for a general
-      audience. We do not knowingly collect data from children under 13.
-    </p>
-
-    <h2>Your rights</h2>
-    <p>
-      Since our own code holds no personal data, access/deletion requests are
-      generally handled through Google's own tools: you can turn off ad
-      personalisation in your device settings, or withdraw your choice through
-      Ad Choices above.
-    </p>
-    <p>
-      The progress stored on your device is deleted completely when you
-      uninstall the app; we keep no copy of it.
-    </p>
-
-    <h2>Changes to this policy</h2>
-    <p>
-      This page may be updated from time to time; the date at the top reflects
-      the latest revision.
-    </p>
-
-    <h2>Contact</h2>
-    <p>
-      Questions and data requests:
-      <a href="mailto:gameshunterstm@gmail.com">gameshunterstm@gmail.com</a>
-    </p>
-  </section>
+  <div class="card">
+    <h2>Gizlilik / Privacy</h2>
+    <p><a href="https://gameshunterstm.github.io/voltsphere-privacy/">Gizlilik Politikası · Privacy Policy</a></p>
+    <h2 style="margin-top:14px">İletişim / Contact</h2>
+    <p><a href="mailto:gameshunterstm@gmail.com">gameshunterstm@gmail.com</a></p>
+  </div>
 
   <footer>Voltsphere &middot; gameshunter</footer>
 </div>
-
-<script>
-  function showLang(lang) {
-    document.getElementById('tr').classList.toggle('active', lang === 'tr');
-    document.getElementById('en').classList.toggle('active', lang === 'en');
-    document.getElementById('btn-tr').setAttribute('aria-pressed', lang === 'tr');
-    document.getElementById('btn-en').setAttribute('aria-pressed', lang === 'en');
-    document.documentElement.lang = lang;
-  }
-</script>
 </body>
 </html>
